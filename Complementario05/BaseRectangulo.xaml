@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Complementario05.BaseRectangulo"
+             Title="BaseRectangulo">
+    <StackLayout Padding="20">
+        <!--Agregamos un label en nuestra app en el cual le vamos a poner un fonsize large
+        Luego agregamos un entry con el placeholder llamandolo altura, ponemos un keyboard numeric en la app
+        esto facilitara a los usuarios que ingresen  ya que cuando lo hagan pondra un teclado numerico-->
+        <Label Text="Ingrese la altura del rectángulo:" FontSize="Large" />
+        <Entry x:Name="alturaEntry" Placeholder="Altura" Keyboard="Numeric" />
+
+        <Label Text="Ingrese la base del rectángulo:" FontSize="Large" />
+        <Entry x:Name="baseEntry" Placeholder="Base" Keyboard="Numeric" />
+
+        <!--Agregamos un button al cual le pondremos calcular, y agregamos un evento en el button del xaml.cs
+        para que despues lo podamos codificar-->
+        <Button Text="Calcular" Clicked="Button_Clicked" />
+
+        <!--Agregamos unos labels llamandoles perimetro y superficie estos cunpliran la funcion de aparecer en la pantalla indicando
+        los resultados obtenidos-->
+        <Label x:Name="perimetroLabel" FontSize="Large" />
+        <Label x:Name="superficieLabel" FontSize="Large" />
+
+        <!--Agreamos una img en nuestra app, para que sea mas vista y mas agradable-->
+        <Image Source="C:\Users\Alexis\Documents\Practica 09\Complementario05\Complementario05\Rectangulo.png" WidthRequest="500" HeightRequest="300" Aspect="AspectFit" />
+
+    </StackLayout>
+</ContentPage>
